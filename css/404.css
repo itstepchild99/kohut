@@ -1,0 +1,97 @@
+body {
+ font-family: 'Roboto', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+.custom {
+background-color: #181818;
+
+}
+p, h4 {
+  color: #989898;
+}
+.numbers {
+  font-size: 100px;
+}
+p {
+  font-size: 50px;
+}
+h2 {
+  color: #393939;
+}
+span{
+  color: white;
+}
+button {
+
+  background: #181818;
+  border: 2px solid white;
+border-radius: 50px;
+
+    padding: 0.5rem 1rem;
+    margin: auto;
+}
+button > a {
+color: #989898;
+
+}
+button > a:hover {
+  color: #989898;
+  text-decoration: none;
+}
+
+.round {
+  width: 2em;
+  height: 2em;
+  border: 1px solid black;
+  border-radius: 50%;
+  /* line-height: 10em;  */
+  text-align: center;
+  background: black;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  color: white;
+}
+  .menu-main {
+  list-style: none;
+  margin: 5px 0 5px;
+  padding: 25px 0 5px;
+  text-align: center;
+  background: white;
+}
+
+
+.menu-main li:last-child:after {content: none;}
+.menu-main a {
+  text-decoration: none;
+
+  position: relative;
+  padding-bottom: 20px;
+
+  font-size: 14px;
+
+  display: inline-block;
+  transition: color .2s;
+}
+.menu-main a, .menu-main a:visited {color: #9d999d;}
+.menu-main a.current, .menu-main a:hover{color: #feb386;}
+.menu-main a:before,
+.menu-main a:after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  top: auto;
+  right: 50%;
+  bottom: -1px;
+  left: 50%;
+  background: #181818;
+  transition: .8s;
+}
+.menu-main a:hover:before, .menu-main .current:before {left: 0;}
+.menu-main a:hover:after, .menu-main .current:after {right: 0;}
+@media (max-width: 550px) {
+.menu-main {padding-top: 0;}
+.menu-main li {display: block;}
+.menu-main li:after {content: none;}
+.menu-main a {
+  padding: 25px 0 20px;
+  margin: 0 30px;
+}
+}

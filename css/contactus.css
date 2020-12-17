@@ -1,0 +1,160 @@
+body {
+  font-family: 'Roboto', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.round {
+  width: 2em;
+  height: 2em;
+  border: 1px solid black;
+  border-radius: 50%;
+  text-align: center;
+  background: black;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+.button-custom {
+  background-color: #181818;
+  color: white;
+  border: none;
+}
+
+.blog-text {
+  color: #4F4F4F;
+}
+
+.custom {
+  background-color: #181818;
+}
+
+p > a{
+  color: #989898;
+
+}
+
+
+
+h3 {
+  color: white;
+}
+
+p, h4, span {
+  color: #989898;
+}
+
+h5 {
+  color: white;
+}
+
+button {
+  background-color: #000000;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 100%;
+}
+
+hr {
+  background-color: #F4F4F4;
+}
+
+.badge {
+  background-color: #181818;
+}
+
+.btn-dark {
+  background-color: rgb(0, 0, 0);
+}
+
+.name {
+  margin-top: 70px;
+}
+.pic {
+  transition: 1s;
+}
+.pic:hover {
+  transform: scale(1.2);
+}
+
+footer {
+    border: solid 1px silver;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    text-align: center;
+}
+
+.menu-main {
+  list-style: none;
+  margin: 5px 0 5px;
+  padding: 25px 0 5px;
+  text-align: center;
+  background: white;
+}
+
+.menu-main li:last-child:after {
+  content: none;
+}
+
+.menu-main a {
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 20px;
+  font-size: 14px;
+  display: inline-block;
+  transition: color .2s;
+}
+
+.menu-main a, .menu-main a:visited {
+  color: #9d999d;
+}
+
+.menu-main a.current, .menu-main a:hover {
+  color: #feb386;
+}
+
+.menu-main a:before,
+.menu-main a:after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  top: auto;
+  right: 50%;
+  bottom: -1px;
+  left: 50%;
+  background: #181818;
+  transition: .8s;
+}
+
+.menu-main a:hover:before, .menu-main .current:before {
+  left: 0;
+}
+
+.menu-main a:hover:after, .menu-main .current:after {
+  right: 0;
+}
+
+@media (max-width: 550px) {
+  .menu-main {
+    padding-top: 0;
+  }
+
+  .menu-main li {
+    display: block;
+  }
+
+  .menu-main li:after {
+    content: none;
+  }
+
+  .menu-main a {
+    padding: 25px 0 20px;
+    margin: 0 30px;
+  }
+}

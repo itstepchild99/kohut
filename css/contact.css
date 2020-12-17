@@ -1,0 +1,9 @@
+.block-inside {
+  background-color: #ffffff;
+}
+.block-inside .name {
+  color: #4f4f4f;
+}
+.block-inside .price {
+  color: #252525;
+}
